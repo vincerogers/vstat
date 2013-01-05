@@ -1,0 +1,21 @@
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\obj\x86\Debug\VStatsInterface.MainForm.resources
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\obj\x86\Debug\VStatsInterface.Properties.Resources.resources
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\bin\Debug\VStatsInterface.exe
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\bin\Debug\VStatsInterface.pdb
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\bin\Debug\VStats.dll
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\bin\Debug\VStats.pdb
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\obj\x86\Debug\VStatsInterface.exe
+C:\Users\vince\Documents\Dev\Neural Network\WindowsFormsApplication1\obj\x86\Debug\VStatsInterface.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\obj\x86\Debug\VStatsInterface.exe
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\obj\x86\Debug\VStatsInterface.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\bin\Debug\VStatsInterface.exe
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\bin\Debug\VStatsInterface.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\bin\Debug\VStats.dll
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\bin\Debug\VStats.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\obj\x86\Debug\VStat Interface.csprojResolveAssemblyReference.cache
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\obj\x86\Debug\VStatsInterface.MainForm.resources
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\obj\x86\Debug\VStatsInterface.Properties.Resources.resources
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\WindowsFormsApplication1\obj\x86\Debug\VStat Interface.csproj.GenerateResource.Cache

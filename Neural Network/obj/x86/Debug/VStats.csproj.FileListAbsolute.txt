@@ -1,0 +1,10 @@
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\bin\Debug\VStats.dll
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\bin\Debug\VStats.pdb
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\obj\x86\Debug\VStats.dll
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\obj\x86\Debug\VStats.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\bin\Debug\VStats.dll
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\bin\Debug\VStats.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\obj\x86\Debug\VStats.dll
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\obj\x86\Debug\VStats.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\obj\x86\Debug\VStats.csprojResolveAssemblyReference.cache

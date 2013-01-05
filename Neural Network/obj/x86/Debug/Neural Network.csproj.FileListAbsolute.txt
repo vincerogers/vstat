@@ -1,0 +1,25 @@
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\bin\Debug\Neural Network.exe
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\bin\Debug\Neural Network.pdb
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\obj\x86\Debug\Neural Network.exe
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\obj\x86\Debug\Neural Network.pdb
+C:\Documents and Settings\Vince\My Documents\Dropbox\Dev\Neural Network\Neural Network\bin\Debug\Neural Network.exe
+C:\Documents and Settings\Vince\My Documents\Dropbox\Dev\Neural Network\Neural Network\bin\Debug\Neural Network.pdb
+C:\Documents and Settings\Vince\My Documents\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Vince\My Documents\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Debug\Neural Network.exe
+C:\Documents and Settings\Vince\My Documents\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Debug\Neural Network.pdb
+C:\Users\Vince\Documents\Dropbox\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Debug\Neural Network.exe
+C:\Users\Vince\Documents\Dropbox\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Debug\Neural Network.pdb
+C:\Users\Vince\Documents\Dropbox\Dropbox\Dev\Neural Network\Neural Network\bin\Debug\Neural Network.exe
+C:\Users\Vince\Documents\Dropbox\Dropbox\Dev\Neural Network\Neural Network\bin\Debug\Neural Network.pdb
+C:\Users\Vince\Documents\Dropbox\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Vince\Documents\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Debug\Neural Network.exe
+C:\Users\Vince\Documents\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Debug\Neural Network.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\Neural Network\Neural Network\bin\Debug\Neural Network.exe
+C:\Users\Vince\Documents\Dropbox\Dev\Neural Network\Neural Network\bin\Debug\Neural Network.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Debug\Neural Network.csprojResolveAssemblyReference.cache
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\bin\Debug\VStats.pdb
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\obj\x86\Debug\VStats.pdb
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\bin\Debug\VStats.dll
+C:\Users\vince\Documents\Dev\Neural Network\Neural Network\obj\x86\Debug\VStats.dll

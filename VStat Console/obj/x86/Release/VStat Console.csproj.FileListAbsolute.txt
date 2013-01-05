@@ -1,0 +1,7 @@
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\bin\Release\VStat Console.exe
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\bin\Release\VStat Console.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\bin\Release\VStats.dll
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\bin\Release\VStats.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\obj\x86\Release\VStat Console.csprojResolveAssemblyReference.cache
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\obj\x86\Release\VStat Console.exe
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\obj\x86\Release\VStat Console.pdb

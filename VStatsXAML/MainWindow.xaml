@@ -1,0 +1,95 @@
+﻿<Window x:Name="VStats" x:Class="VStatsXAML.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:DV="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        Title="VStats" Height="667" Width="900">
+    <Grid>
+        <TabControl SelectionChanged="TabControl_SelectionChanged_1">
+            <TabItem x:Name="dataSourceTab" Header="Data Source">
+                <Grid Background="#FFE5E5E5" Margin="0,-3,0,3">
+                    <Grid HorizontalAlignment="Left" Height="99" Margin="379,19,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Border x:Name="fileParamsBorders" BorderBrush="Black" BorderThickness="1" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="539">
+                        <Grid x:Name="fileOptionsGrid" HorizontalAlignment="Center" Height="104" Margin="5,23,45,35" VerticalAlignment="Center" Width="487" RenderTransformOrigin="0.49,0.721" ClipToBounds="True">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="49*"/>
+                                <ColumnDefinition Width="208*"/>
+                                <ColumnDefinition Width="0*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="0"/>
+                            </Grid.RowDefinitions>
+                            <TextBox x:Name="fileTextBox" Height="23" Margin="9,2,97,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" TextChanged="TextBox_TextChanged_1" IsEnabled="False" Grid.Column="1"/>
+                            <Label Content="File&#xD;&#xA;" HorizontalAlignment="Left" Margin="65,0,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                            <Label Content="Inputs&#xD;&#xA;" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" RenderTransformOrigin="-2.237,3.654" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                            <Label Content="Header&#xD;&#xA;" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                            <Label Content="Outputs&#xD;&#xA;" HorizontalAlignment="Right" Margin="0,2,0,0" Grid.Row="3" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="24"/>
+                            <Button x:Name="fileButton" Content="File..." Grid.Column="1" HorizontalAlignment="Left" Margin="305,2,0,0" VerticalAlignment="Top" Width="75" Click="fileButton_Click"/>
+                            <CheckBox x:Name="headerCheckbox" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="14,7,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="headerCheckbox_Checked" IsChecked="True"/>
+                        </Grid>
+                    </Border>
+                    <Button x:Name="trainButton" Content="Train" HorizontalAlignment="Left" Margin="304,395,0,0" VerticalAlignment="Top" Width="75" Click="trainButton_Click"/>
+                    <RichTextBox x:Name="logTextBlock" HorizontalAlignment="Left" Height="167" Margin="10,204,0,0" VerticalAlignment="Top" Width="435">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="RichTextBox"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                    <!-- Line Chart -->
+                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="accuracyChart" Height="250"
+                       Background="LightSteelBlue" Margin="459,181,10,174">
+                        <DVC:Chart.Axes>
+                            <DVC:LinearAxis>
+                                
+                            </DVC:LinearAxis>
+                        </DVC:Chart.Axes>
+                        <DVC:Chart.Series>
+                            <DVC:LineSeries x:Name="holdoutSetLine" Title="Holdout Accuracy" 
+    		                                IndependentValueBinding="{Binding Path=Key}"
+    		                                DependentValueBinding="{Binding Path=Value}">
+                                <DVC:LineSeries.DataPointStyle>
+                                    <Style TargetType="DVC:LineDataPoint">
+                                        <Setter Property="Background" Value="Lime" />
+                                        <Setter Property="Template" Value="{x:Null}"/>
+                                    </Style>
+                                </DVC:LineSeries.DataPointStyle>
+                            </DVC:LineSeries>
+                            <DVC:LineSeries x:Name="trainingSetLine" Title="Validation Accuracy" 
+    		                                IndependentValueBinding="{Binding Path=Key}"
+    		                                DependentValueBinding="{Binding Path=Value}">
+                                <DVC:LineSeries.DataPointStyle>
+                                    <Style TargetType="DVC:LineDataPoint">
+                                        <Setter Property="Background" Value="Blue" />
+                                        <Setter Property="Template" Value="{x:Null}"/>                         
+                                    </Style>
+                                </DVC:LineSeries.DataPointStyle>
+                            </DVC:LineSeries>
+                            <DVC:LineSeries x:Name="bestLine" Title="Best Accuracy" 
+    		                                IndependentValueBinding="{Binding Path=Key}"
+    		                                DependentValueBinding="{Binding Path=Value}">
+  
+                                <DVC:LineSeries.DataPointStyle>
+                                    <Style TargetType="DVC:LineDataPoint">
+                                        <Setter Property="Background" Value="Red" />
+                                        <Setter Property="Template" Value="{x:Null}"/>
+                                    </Style>
+                                </DVC:LineSeries.DataPointStyle>
+                            </DVC:LineSeries>
+                        </DVC:Chart.Series>
+             
+                    </DVC:Chart>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="modelParamsTab" Header="Model Params">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <Grid x:Name="fileParamsGrid" Height="100" Width="100"/>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,5 @@
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\bin\Release\VStats.dll
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\bin\Release\VStats.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\obj\x86\Release\VStats.dll
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\obj\x86\Release\VStats.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\Neural Network\obj\x86\Release\VStats.csprojResolveAssemblyReference.cache

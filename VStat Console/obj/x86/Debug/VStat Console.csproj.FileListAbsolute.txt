@@ -1,0 +1,14 @@
+C:\Users\vince\Documents\Dev\Neural Network\VStat Console\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\vince\Documents\Dev\Neural Network\VStat Console\bin\Debug\VStat Console.exe
+C:\Users\vince\Documents\Dev\Neural Network\VStat Console\bin\Debug\VStat Console.pdb
+C:\Users\vince\Documents\Dev\Neural Network\VStat Console\bin\Debug\VStats.dll
+C:\Users\vince\Documents\Dev\Neural Network\VStat Console\bin\Debug\VStats.pdb
+C:\Users\vince\Documents\Dev\Neural Network\VStat Console\obj\x86\Debug\VStat Console.exe
+C:\Users\vince\Documents\Dev\Neural Network\VStat Console\obj\x86\Debug\VStat Console.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\bin\Debug\VStat Console.exe
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\bin\Debug\VStat Console.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\bin\Debug\VStats.dll
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\bin\Debug\VStats.pdb
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\obj\x86\Debug\VStat Console.csprojResolveAssemblyReference.cache
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\obj\x86\Debug\VStat Console.exe
+C:\Users\Vince\Documents\Dropbox\Dev\VStat\VStat Console\obj\x86\Debug\VStat Console.pdb

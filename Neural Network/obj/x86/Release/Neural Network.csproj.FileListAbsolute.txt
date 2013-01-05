@@ -1,0 +1,6 @@
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\obj\x86\Release\Neural Network.pdb
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\bin\Release\Neural Network.pdb
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\bin\Release\Neural Network.exe
+C:\Documents and Settings\Vince\my documents\visual studio 2010\Projects\Neural Network\Neural Network\obj\x86\Release\Neural Network.exe
+C:\Documents and Settings\Vince\My Documents\Dropbox\Dev\Neural Network\Neural Network\obj\x86\Release\Neural Network.exe
