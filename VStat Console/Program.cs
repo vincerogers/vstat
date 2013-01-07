@@ -1,5 +1,5 @@
 ﻿//#define DEBUG
-
+#undef DEBUG
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,12 +18,12 @@ namespace VStat_Console
     {
         static void Main(string[] args)
         {
-            string fileName = "C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\VStat\\letter-recognition-2.csv";//"C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\Neural Network\\iris_converted_normalized.csv";
-            int inputs = 16;
-            int outputs = 3;
-            //string fileName = "C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\VStat\\iris_converted_normalized.csv";//"C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\Neural Network\\iris_converted_normalized.csv";
-            //int inputs = 4;
+            //string fileName = "C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\VStat\\letter-recognition-2.csv";//"C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\Neural Network\\iris_converted_normalized.csv";
+            //int inputs = 16;
             //int outputs = 3;
+            string fileName = "C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\VStat\\iris_converted_normalized.csv";//"C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\Neural Network\\iris_converted_normalized.csv";
+            int inputs = 4;
+            int outputs = 3;
 
             //create the data source off of an existing file
             TextDataSource dataSource = new TextDataSource(fileName, inputs, outputs, true);

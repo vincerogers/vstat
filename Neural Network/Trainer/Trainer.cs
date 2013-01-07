@@ -122,13 +122,10 @@ namespace VStats.Trainer
             {
                 case StopConditions.maxEpochs:
                     return epochs > stopParameter;
-                    break;
                 case StopConditions.maxTimeMinutes:
                     return this.trainingTimer.ElapsedMilliseconds * 60 * 1000 > stopParameter;
-                    break;
                 case StopConditions.minValidationAccuarcy:
                     return validationAccuracy > stopParameter;
-                    break;
                 default:
                     throw new Exception("Invalid stop condition type");
             }
@@ -171,8 +168,5 @@ namespace VStats.Trainer
         {
             return epochs;
         }
-
-
-
     }
 }

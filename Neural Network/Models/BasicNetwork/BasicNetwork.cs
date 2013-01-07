@@ -18,14 +18,15 @@ namespace VStats.Models
 
         public BasicNetwork(int numInputs, int numOutputs, int numHiddenNodes = 10)
         {
-            this.layers = new Layer[3];
-            this.setInputLayer(new Layer(numInputs, true, "input"));
-            this.addHiddenLayer(new Layer(numHiddenNodes, true, "hidden"));
-            this.setOutputLayer(new Layer(numOutputs, false, "output"));
-            this.initialize();
+            this.createNetwork( numInputs, numOutputs, 1, new int[] {numHiddenNodes});
         }
 
         public BasicNetwork(int numInputs, int numOutputs, int hiddenLayers, int[] hiddenLayerNodes)
+        {
+            this.createNetwork(numInputs, numOutputs, hiddenLayers, hiddenLayerNodes);
+        }
+
+        protected void createNetwork(int numInputs, int numOutputs, int hiddenLayers, int[] hiddenLayerNodes)
         {
             this.layers = new Layer[2 + hiddenLayers];
             this.layers[0] = new Layer(numInputs, true, "input");
@@ -34,24 +35,6 @@ namespace VStats.Models
 
             this.layers[this.layers.Length - 1] = new Layer(numOutputs, false, "output");
             this.initialize();
-        }
-
-        public void setInputLayer(Layer inputLayer)
-        {
-            this.layers[0] = inputLayer;
-            //this.layers[0].setLabel("Input");
-        }
-
-        protected void addHiddenLayer(Layer hiddenLayer)
-        {
-            this.layers[1] = hiddenLayer;
-            //this.layers[1].setLabel("Hidden");
-        }
-
-        public void setOutputLayer(Layer outputLayer)
-        {
-            this.layers[this.layers.Length - 1] = outputLayer;
-            //this.layers[2].setLabel("Output");
         }
 
         public void initialize()
@@ -84,11 +67,6 @@ namespace VStats.Models
         public Layer getInputLayer()
         {
             return this.layers[0];
-        }
-
-        public Layer getHiddenLayer()
-        {
-            return this.layers[1];
         }
 
         public Layer getOutputLayer()
