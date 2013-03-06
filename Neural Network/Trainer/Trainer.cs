@@ -16,8 +16,20 @@ namespace VStats.Trainer
 
         //training parameters
         private int epochs = 0;
-        protected double learningRate = 0.02;
+
+        protected double learningRate = 0.001;
+        public double LearningRate
+        {
+            get { return learningRate; }
+            set { learningRate = value; }
+        }
+
         protected double momentum = 0.9;
+        public double Momentum
+        {
+            get { return momentum; }
+            set { momentum = value; }
+        }
 
         //training statistics
         protected double correctTraining = 0;

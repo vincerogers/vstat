@@ -1,4 +1,5 @@
-﻿using System;
+﻿//#define TEST
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,15 +10,13 @@ namespace VStats
     [Serializable()]
     public class Connection
     {
-        public delegate void SignalHandler(Connection c, EventArgs e);
-        public event SignalHandler signalHandler;
-        public EventArgs e;
         private Node fromNode;
         private Node toNode;
         private double weight;
         private double value;
+        private double weightRange = .25;
 
-        public static double tempWeight = 0.05;
+        public static double tempWeight = 0.05; //used for debugging purposes
 
         private static Random rand = new Random();
         public Connection(VStats.Node fromNode, VStats.Node toNode)
@@ -31,11 +30,13 @@ namespace VStats
 
         public void initializeWeight()
         {
-            //this.weight = rand.NextDouble();
-           // this.weight = -0.5 + (rand.NextDouble() * (0.5 - -0.5));
-            this.weight = (rand.NextDouble() * 2 * 4) - 4;
-            //this.weight = tempWeight;
-            //tempWeight += 0.05;
+#if TEST            
+            this.weight = tempWeight;
+            tempWeight += 0.05;
+#else
+            //this.weight = (rand.NextDouble() * 2 * 4) - 4;
+            this.weight = -weightRange + (rand.NextDouble() * (weightRange - -weightRange));
+#endif
         }
 
         public void setWeight(double weight)
@@ -60,9 +61,6 @@ namespace VStats
 
         public void fire(double value)
         {
-            //setValue(value);
-            //let all listeners know that we just fired
-            //signalHandler(this, e);
             this.toNode.acceptSignal(value, this.weight);
         }
 

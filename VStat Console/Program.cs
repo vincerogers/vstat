@@ -18,22 +18,24 @@ namespace VStat_Console
     {
         static void Main(string[] args)
         {
-            //string fileName = "C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\VStat\\letter-recognition-2.csv";//"C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\Neural Network\\iris_converted_normalized.csv";
-            //int inputs = 16;
-            //int outputs = 3;
-            string fileName = "C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\VStat\\iris_converted_normalized.csv";//"C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\Neural Network\\iris_converted_normalized.csv";
-            int inputs = 4;
+            string fileName = "C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\VStat\\Test Data\\letter-recognition-normalized.csv";//"C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\Neural Network\\iris_converted_normalized.csv";
+            int inputs = 16;
             int outputs = 3;
-
+            //string fileName = "C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\VStat\\Test Data\\iris_converted_normalized.csv";//"C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\Neural Network\\iris_converted_normalized.csv";
+            //int inputs = 4;
+            //int outputs = 3;
+            //string fileName = "C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\VStat\\Test Data\\debug.csv";//"C:\\Users\\Vince\\Documents\\Dropbox\\Dev\\Neural Network\\iris_converted_normalized.csv";
+            //int inputs = 3;
+            //int outputs = 1;
             //create the data source off of an existing file
             TextDataSource dataSource = new TextDataSource(fileName, inputs, outputs, true);
-            dataSource.setValidationMode(ValidationMode.Holdout, .5);//(ValidationMode.KFold, 3);
+            dataSource.setValidationMode(ValidationMode.Holdout, .2);//(ValidationMode.KFold, 3);
            // dataSource.setValidationMode(ValidationMode.KFold, 4);
             dataSource.loadData();
 
             //create the neural network
             //BasicNetwork nn = new BasicNetwork( 4, 3, 1, new int[] {10});
-            BasicNetwork nn = new BasicNetwork(inputs, outputs, 1, new int[1] {10});
+            BasicNetwork nn = new BasicNetwork(inputs, outputs, 1, new int[1] {2});
 
             nn.printConnections();
 

@@ -93,7 +93,7 @@ namespace VStats.Models
             foreach (Layer layer in this.getLayers()) //trip all bias nodes
                 if (layer.hasBiasNode())
                     layer.getBiasNode().fire();
-            for (int x = 0; x < 10000; x++) ;
+
             double[] returnValues = new double[output.countNodes()];
             for (int x = 0; x < output.countNodes(); x++)
             {

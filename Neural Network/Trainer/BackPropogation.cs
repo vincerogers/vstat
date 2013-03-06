@@ -1,4 +1,5 @@
-﻿using System;
+﻿//#define TEST
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,10 +40,6 @@ namespace VStats.Trainer
 
         protected override void trainRecord(Data.TrainingRecord record)
         {
-            #if DEBUG
-            //Console.WriteLine("SSE: " + sse);
-            #endif
-
             Layer[] layers = ((BasicNetwork)model).getLayers();
             Node node; //will hold current node
             double outputValue; //will hold current node value
@@ -56,11 +53,16 @@ namespace VStats.Trainer
                 {
                     node = layers[x].getNode(i);
                     outputValue = node.getValue();
-                    //Console.WriteLine(outputValue);
+
                     if (node.isOutputNode())
                     {
+#if TEST
+                        Console.WriteLine("OUTPUT VALUE IS " + outputValue);
+#endif
                         this.errorResp[x][i] = outputValue * (1 - outputValue) * (record.outputValues[i] - outputValue);
-                        //Console.WriteLine(node + ": " + Math.Round(outputValue, 4) + " * (1 - " + Math.Round(outputValue, 4) + ") * (" + Math.Round(expectedValues[i], 4) + " - " + Math.Round(outputValue, 4) + ") = " + Math.Round(errorResp[x][i], 4));
+#if TEST
+                        Console.WriteLine(node + ": " + Math.Round(outputValue, 4) + " * (1 - " + Math.Round(outputValue, 4) + ") * (" + Math.Round(record.outputValues[i], 4) + " - " + Math.Round(outputValue, 4) + ") = " + Math.Round(errorResp[x][i], 4));
+#endif
                     }
                     else
                     {
@@ -76,31 +78,29 @@ namespace VStats.Trainer
                          */
                         for (int k = 0; k < conns.Length; k++)
                         {
-                             downStreamSum += conns[k].getWeight() * errorResp[x + 1][k];
-                            debugString += Math.Round(conns[k].getWeight(),4)+" * "+Math.Round(errorResp[x + 1][k],4)+" + ";
+                            downStreamSum += conns[k].getWeight() * errorResp[x + 1][k];
+                            debugString += Math.Round(conns[k].getWeight(),4)+" * " + Math.Round(errorResp[x + 1][k],4) + " + ";
 
                             deltaWeight = learningRate * outputValue * errorResp[x + 1][k] + momentum * prevDelta[x][i][k];
-                            #if DEBUG
-                            //Console.WriteLine(node + " Delta to " +k+ ": " + learningRate + " * " + node.getValue() + "*" + errorResp[x + 1][k] + " + " + momentum + " * " + prevDelta[x][i][k] + " = " + deltaWeight);
+                            #if TEST
+                            Console.WriteLine(node + " Delta to " +k+ ": " + learningRate + " * " + Math.Round(node.getValue(),4) + "*" + Math.Round(errorResp[x + 1][k],4) + " + " + momentum + " * " + prevDelta[x][i][k] + " = " + Math.Round(deltaWeight,4));
                             #endif
                             conns[k].setWeight(conns[k].getWeight() + deltaWeight);
                             prevDelta[x][i][k] = deltaWeight; //load current delta for momentum use during next training iteration
                         }
                         errorResp[x][i] = outputValue * (1 - outputValue) * downStreamSum;
-                        #if DEBUG 
-                        //Console.WriteLine(node + ": " + Math.Round(outputValue, 4) + " * (1 - " + Math.Round(outputValue, 4) + ") " +" * ("+debugString+") = " + Math.Round(errorResp[x][i], 4));
+                        #if TEST
+                        Console.WriteLine(node + ": " + Math.Round(outputValue, 4) + " * (1 - " + Math.Round(outputValue, 4) + ") " +" * ("+debugString+") = " + Math.Round(errorResp[x][i], 4));
                         #endif
 
                     }
-                    #if DEBUG
-                    //Console.WriteLine("Error resp for layer {0}, node {1} ({3}) is {2}", x, i, errorResp[x][i], node.getBias() ? "Bias" : "");
-                    //Console.ReadLine();
+                    #if TEST
+                    Console.WriteLine("Error resp for layer {0}, node {1} ({3}) is {2} \n", x, i, errorResp[x][i], node.getBias() ? "Bias" : "");
                     #endif                  
                 }
             }
-            #if DEBUG
-            //network.printConnections();
-            //Console.ReadLine();
+            #if TEST
+            Console.ReadLine();
             #endif
 
         }

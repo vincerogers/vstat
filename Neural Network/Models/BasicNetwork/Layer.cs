@@ -37,7 +37,6 @@ namespace VStats.Models
             this.label = label;
         }
 
-        //public Layer(int numNodes, bool bias) : this(numNodes, bias, ""){}
         public Layer(int numNodes, bool bias, string label = null)
         {
             this.label = label;

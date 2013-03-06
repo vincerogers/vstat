@@ -58,9 +58,9 @@ namespace VStats
 
         public void setValue(double value)
         {
-            #if DEBUG
-                //Console.WriteLine(new String(tab, tabs) + "Setting value for " + this + " to " + value);
-            #endif
+            //#if DEBUG
+            //    Console.WriteLine(new String(tab, tabs) + "Setting value for " + this + " to " + value);
+            //#endif
             
             if (!bias)
                 this.value = value;
@@ -74,17 +74,17 @@ namespace VStats
         }
 
         public void fire()
-        {            
-            //#if DEBUG
-            //    //Console.WriteLine(new String(tab, tabs) + "Firing " + this);
-            //    tabs++;    
-            //#endif
+        {
+//#if DEBUG
+//            Console.WriteLine(new String(tab, tabs) + "Firing " + this);
+//            tabs++;
+//#endif
             //if input layer node we'll assume the value was already set
             if (!isInputNode())
             {
-                //Console.WriteLine(combine(inValues.ToArray(), inWeights.ToArray()) + "  " + activate(
-                  //      combine(inValues.ToArray(), inWeights.ToArray())
-                    //));
+                //Console.WriteLine(new String(tab, tabs) + combine(inValues.ToArray(), inWeights.ToArray()) + "  " + activate(
+                //        combine(inValues.ToArray(), inWeights.ToArray())
+                //    ));
                 setValue(
                     activate(
                         combine(inValues.ToArray(), inWeights.ToArray())
@@ -96,10 +96,10 @@ namespace VStats
                 outConnections.ElementAt(x).fire(this.value);
 
             clearInputs();
-            //#if DEBUG
-            //    tabs--;
-            //    //Console.WriteLine(new String(tab, tabs) + "Done Firing " + this);                 
-            //#endif
+//#if DEBUG
+//            tabs--;
+//            Console.WriteLine(new String(tab, tabs) + "Done Firing " + this);                 
+//#endif
         }
 
         public void clearInputs()
